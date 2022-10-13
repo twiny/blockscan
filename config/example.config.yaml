@@ -1,0 +1,18 @@
+# rest
+rest:
+    address: ":8080"
+
+# indexer
+indexer:
+    address: ":8081"
+    token: "secret"
+    endpoint: "wss://blockchain.network"
+    limiter:
+        rate: 3
+        duration: "1s"
+    workers: 5
+    timeout: "30s"
+    
+# store
+store:
+    path: "./tmp/"
